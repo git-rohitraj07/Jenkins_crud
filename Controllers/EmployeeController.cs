@@ -30,7 +30,7 @@ namespace WebApplication7.Controllers
         public ActionResult Add(int id = 0)
         {
             if (id == 0)
-                return View(new Employee())
+                return View(new Employee());
             else
             {
                 using (DBModel db = new DBModel())
