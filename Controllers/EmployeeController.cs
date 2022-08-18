@@ -19,7 +19,7 @@ namespace WebApplication7.Controllers
         public ActionResult GetData()
         {
             
-            using (DBModel db = new DBModel())
+            using ( db = new DBModel())
             {
                 List<Employee> emplist = db.Employees.ToList<Employee>();
                 return Json(new { data = emplist }, JsonRequestBehavior.AllowGet);
