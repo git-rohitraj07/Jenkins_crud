@@ -21,7 +21,10 @@ namespace WebApplication7.Controllers
             
             using (DBModel db = new DBModel())
             {
-                List<> emplist = db.Employees.ToList<Employee>();
+
+                List<Employee> emplist = db.Employees.ToList<Employee>();
+
+
                 return Json(new { data = emplist }, JsonRequestBehavior.AllowGet);
             }
         }
