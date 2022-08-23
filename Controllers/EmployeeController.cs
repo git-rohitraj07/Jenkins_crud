@@ -14,7 +14,7 @@ namespace WebApplication7.Controllers
         public ActionResult Index()
         {
 
-            return 
+            return View();
         }
         public ActionResult GetData()
         {
