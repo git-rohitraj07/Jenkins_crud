@@ -66,7 +66,7 @@ namespace WebApplication7.Controllers
         }
         [HttpPost]
         public ActionResult Delete(int id)
-        {
+        { 
             using (DBModel db=new DBModel())
             {
                 Employee emp = db.Employees.Where(x => x.EmployeeID == id).FirstOrDefault < Employee>();
