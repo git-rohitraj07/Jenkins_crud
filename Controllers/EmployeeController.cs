@@ -8,13 +8,14 @@ using WebApplication7.Models;
 
 namespace WebApplication7.Controllers
 {
-    public class EmployeeController : Controller
+    public class EmployeeController : 
     {
         // GET: Employee
         public ActionResult Index()
         {
 
-            return View
+            return View();
+
         }
         public ActionResult GetData()
         {
