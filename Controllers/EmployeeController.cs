@@ -14,7 +14,7 @@ namespace WebApplication7.Controllers
         public ActionResult Index()
         {
 
-            return 
+            return View();
 
         }
         public ActionResult GetData()
@@ -30,7 +30,7 @@ namespace WebApplication7.Controllers
             }
         }
 
-        [HttpGet]
+       [HttpGet]
         public ActionResult Add(int id = 0)
         {
             if (id == 0)
@@ -75,6 +75,7 @@ namespace WebApplication7.Controllers
                 db.SaveChanges();
                 return Json(new { success = true, message = "Deleted Succesfully" }, JsonRequestBehavior.AllowGet);
             }
+           
         }
     }
 }
