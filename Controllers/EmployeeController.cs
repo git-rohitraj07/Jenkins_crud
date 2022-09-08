@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -13,11 +14,11 @@ namespace WebApplication7.Controllers
         // GET: Employee
         public ActionResult Index()
         {
-
+           
             return View();
 
         }
-        public ActionResult GetData()
+        public JsonResult GetData()
         {
             
             using (DBModel db = new DBModel())
